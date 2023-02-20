@@ -8,7 +8,8 @@ import time
 
 log.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
                 level=log.INFO,
-                datefmt='%Y-%m-%d %H:%M:%S')
+                datefmt='%Y-%m-%d %H:%M:%S',
+		filename='kill_gpu_zombie.log')
 
 parser = ArgumentParser()
 parser.add_argument("--check-period-second",
